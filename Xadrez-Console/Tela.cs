@@ -1,6 +1,6 @@
-﻿using System.Runtime.ConstrainedExecution;
+﻿
 using tabuleiro;
-using Xadrez;
+using xadrez;
 
 namespace Xadrez_Console
 {
@@ -14,6 +14,10 @@ namespace Xadrez_Console
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("XEQUE!");
+            }
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Security.AccessControl;
+﻿
 using tabuleiro;
-using Xadrez;
+using xadrez;
 using Xadrez_Console;
 
 namespace xadrez
@@ -25,7 +24,7 @@ namespace xadrez
                         Console.WriteLine();
                         Console.Write("origem: ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
-                        partida.ValidarPosicaoDeOrigem(origem);
+                        partida.validarPosicaoDeOrigem(origem);
                         
 
                         bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
