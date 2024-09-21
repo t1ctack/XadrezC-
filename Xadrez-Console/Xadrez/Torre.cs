@@ -36,7 +36,7 @@ namespace Xadrez
                     {
                         break;
                     }
-                    pos.linha += -1;
+                    pos.linha = pos.linha - 1;
                 }
 
             //abaixo
@@ -49,7 +49,7 @@ namespace Xadrez
                     {
                         break;
                     }
-                    pos.linha += -1;
+                    pos.linha = pos.linha + 1;
                 }
 
             // Direita
@@ -62,7 +62,7 @@ namespace Xadrez
                     {
                         break;
                     }
-                    pos.coluna += -1;
+                    pos.coluna = pos.coluna + 1;
                 }
 
             //esquerda
@@ -75,7 +75,7 @@ namespace Xadrez
                     {
                         break;
                     }
-                    pos.coluna += -1;
+                    pos.coluna = pos.coluna - 1;
                 }
 
             return mat;
